@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #2d7ff9;
+  --secondary-red: #ff4d4d;
+  --text-gray: #666666;
+  --border-gray: #e5e5e5;
+}
+
+:root.dark {
+  --primary-blue: #3b82f6;
+  --secondary-red: #ef4444;
+  --text-gray: #9ca3af;
+  --border-gray: #374151;
+}
+
+/* Dark mode transitions */
+.dark-transition {
+  @apply transition-colors duration-200;
+}
+
+/* Common dark mode styles */
+.dark body {
+  @apply bg-gray-900 text-white;
+}
+
+.dark .card {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.dark .input {
+  @apply bg-gray-800 border-gray-700 text-white;
+}
+
+.button-primary {
+  @apply bg-primary-blue text-white hover:bg-blue-600 dark:hover:bg-blue-500;
+}
+
+.button-secondary {
+  @apply bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600;
+}
+
+/* FullCalendar styles */
+.fc {
+  @apply font-sans;
+}
+
+.fc .fc-toolbar-title {
+  @apply text-gray-900 dark:text-white;
+}
+
+.fc .fc-button {
+  @apply bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  @apply bg-primary-blue text-white border-primary-blue;
+}
+
+.fc .fc-daygrid-day-number,
+.fc .fc-col-header-cell-cushion {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  @apply bg-blue-50 dark:bg-blue-900/20;
+}
+
+.fc .fc-event {
+  @apply cursor-pointer;
+}
+
+.fc .fc-event-title {
+  @apply font-medium;
+}
+
+.fc .fc-list-event:hover td {
+  @apply bg-gray-50 dark:bg-gray-800;
+}
+
+.fc-theme-standard td, 
+.fc-theme-standard th,
+.fc-theme-standard .fc-scrollgrid {
+  @apply border-gray-200 dark:border-gray-700;
+}
