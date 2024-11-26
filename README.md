@@ -17,7 +17,7 @@ Currently, two official plugins are available:
     </div>
   </div> -->
 
-![image1](./images/Screenshot1.png)
-![image2](./images/Screenshot2.png)
-![image3](./images/Screenshot3.png)
-![image4](./images/Screenshot4.png)
+![image1](./public/images/Screenshot1.png)
+![image2](./public/images/Screenshot2.png)
+![image3](./public/images/Screenshot3.png)
+![image4](./public/images/Screenshot4.png)
